@@ -1,0 +1,57 @@
+@import 'normalize.css';
+// @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,100&display=swap');
+
+
+
+:root{
+    --primary : #2798A1;
+    --white: #fff;
+    --primary-bold:#077c86;
+    --body-color: #666;
+    --body-color-light:#ccc;
+    --black: #000;
+    
+    --category-color:#3e3d43;
+    --category-color-hover:#2b2a2e;
+    --categoy-color-line: #515056;
+
+    --btn-height: 40px;
+    --btn-border:1px solid #e6e6e6;
+    
+
+    --home-content-width: 1200px;
+    --home-header-height: 124px;
+
+    --header-height: 162px;
+    --category-height: 42px;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.4rem;
+    font-family:  Arial, Helvetica, sans-serif;
+    text-rendering: optimizespeed;
+    color: var(--body-color);
+}
+
+button{
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    user-select: none;
+    height: 100%;
+}
+
+
+  
+
+

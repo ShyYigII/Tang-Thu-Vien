@@ -1,0 +1,27 @@
+.wrapper{
+    background-color: #f8f8f8;
+    border-top: 1px solid #e7e7e7;
+    padding: 20px 0;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.inner{
+    width: var(--home-content-width);
+    height: 100%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 225px;
+    height: 60px;
+    margin-right: 50px;
+}
+
+.description{
+
+}

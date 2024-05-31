@@ -1,0 +1,164 @@
+.wrapper {
+  height: var(--home-header-height, 124px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inner {
+  width: var(--home-content-width);
+  height: 100%;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 219px;
+  height: 52px;
+}
+
+
+.head-above {
+  height: calc(var(--home-header-height) - var(--btn-height));
+  width: 100%;
+ 
+}
+
+.search {
+  width: 390px;
+  height: var(--btn-height);
+  display: flex;
+  border: var(--btn-border);
+
+  input {
+    margin-left: 11px;
+    height: 100%;
+    flex: 1;
+    border: none;
+  }
+
+  input:focus {
+    outline: none;
+  }
+}
+
+.search-btn {
+  width: 40px;
+  height: 100%;
+  background-color: var(--primary);
+  font-size: 20px;
+  color: var(--white);
+  border: none;
+
+  &:hover {
+    color: #fff;
+    border: 1px solid #ed4259;
+    background: #ed4259;
+    cursor: pointer;
+  }
+}
+
+.action-above {
+  height: var(--btn-height);
+
+  .account-btn {
+    font-size: 1.4rem;
+    height: 100%;
+    width: 120px;
+    background-color: transparent;
+    border: var(--btn-border);
+    
+  }
+
+  .account-btn:hover, .logout-btn:hover {
+    color: #fff;
+    border: 1px solid #ed4259;
+    background: #ed4259;
+    cursor: pointer;
+  }
+
+  .logout-btn {
+    font-size: 1.6rem;
+    margin-left: 8px;
+    height: 100%;
+    width: 42px;
+    background-color: transparent;
+    border: var(--btn-border);
+    cursor: pointer;
+  }
+}
+
+.head-below {
+  height: var(--btn-height);
+  width: 100%;
+  background-color: var(--primary);
+  color: var(--white);
+
+  .inner{
+      justify-content: flex-start;
+      position: relative;
+  }
+
+
+}
+
+
+.category{
+    background-color: var(--primary-bold);
+    width: 280px;
+    height: 100%;
+    padding: 0 0 0 18px;
+    margin-right: 24px;
+    user-select: none;
+    display: flex;
+    align-items: center;
+
+    
+}
+
+
+.action-below{
+  height: 100%;
+  display: flex;
+
+  
+  .action-below-nav{
+    padding: 0 32px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .action-below-nav:hover{
+    background-color: var(--primary-bold);
+    transition: none;
+    border-top: 2px solid #bf2d27;
+    border-bottom: 2px solid var(--primary-bold);
+    cursor: pointer;
+    user-select: none;
+    
+  }
+}
+
+.download-app{
+  position: absolute;
+  right: 0;
+  height: 100%;
+  color: var(--white);
+  display: inline-flex;
+  align-items: center;
+
+  &:hover{
+     color: #ffeea8;
+  }
+
+}
+
+.icon{
+  margin-right: 5px;
+  font-size: 1.8rem;
+}

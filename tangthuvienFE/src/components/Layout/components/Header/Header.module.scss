@@ -1,0 +1,186 @@
+.wrapper {
+  height: var(--header-height, 162px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.head-above {
+  width: 100%;
+  background-color: var(--category-color);
+  height: var(--category-height);
+}
+
+.nav-list {
+  position: absolute;
+  left: 0;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  user-select: none;
+}
+
+.action-nav-first {
+  color: var(--white);
+  padding-right: 40px;
+  padding-left: 8px;
+  cursor: pointer;
+}
+
+.action-nav {
+  color: var(--body-color-light);
+  padding: 0 15px;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--white);
+  }
+}
+
+.more-nav {
+  background-color: var(--category-color);
+  padding: 11px 30px 11px 14px;
+
+  &:hover{
+    background-color: var(--black);
+  }
+}
+
+//search book
+
+.search-book {
+  height: 100%;
+  input {
+    width: 150px;
+    height: 26px;
+    background-color: transparent;
+    border-bottom: 1px solid #aaa;
+    color: var(--body-color-light);
+    transition: border 0.3s color 0.3s;
+    outline: none;
+    border-width: 0 0 1px 0;
+  }
+
+  input:focus {
+    border-bottom: 2px solid var(--white);
+  }
+
+  &::after {
+    top: 50%;
+    position: absolute;
+    content: "";
+    width: 1px;
+    background-color: var(--categoy-color-line);
+    height: 24px;
+    transform: translateY(-50%);
+  }
+}
+
+.search-book-btn {
+  color: var(--white);
+  padding: 0 13px;
+  font-size: 1.6rem;
+}
+
+.account {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  float: right;
+  .icon {
+    font-size: 1.8rem;
+    padding-right: 8px;
+  }
+
+  span {
+    font-style: italic;
+  }
+
+  .account-btn {
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &:hover {
+    background-color: var(--category-color-hover);
+  }
+}
+
+.logout-btn {
+  color: var(--white);
+  font-size: 1.8rem;
+  padding: 0 15px;
+
+  &:hover {
+    background-color: var(--category-color-hover);
+  }
+}
+
+//head below
+.head-below {
+  height: calc(var(--header-height) - var(--category-height));
+  width: 100%;
+  background-image: url("/assets/images/category/tien-hiep.jpeg");
+  background-size: cover;
+  background-position: 50% -20px;
+}
+
+.inner {
+  width: var(--home-content-width);
+  position: relative;
+  height: 100%;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logo {
+  position: absolute;
+  left: 0;
+  width: 219px;
+  height: 52px;
+}
+
+.search {
+  width: 390px;
+  height: var(--btn-height);
+  display: flex;
+  border: var(--btn-border);
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+
+  input {
+    padding-left: 11px;
+    height: 100%;
+    flex: 1;
+    border: none;
+  }
+
+  input:focus {
+    outline: none;
+  }
+}
+
+.search-btn {
+  width: 40px;
+  height: 100%;
+  background-color: var(--primary);
+  font-size: 20px;
+  color: var(--white);
+  border: none;
+
+  &:hover {
+    color: #fff;
+    border: 1px solid #ed4259;
+    background: #ed4259;
+    cursor: pointer;
+  }
+}
